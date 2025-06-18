@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sign-up-box {
+            position: relative;
+            width: 470px;
+            height: auto;
+            padding: 10px 30px 30px 30px;
+            background: #FFF;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sign-up-box">
+        <div class="login-header">
+            <header>Sign Up</header>
+            <p>New Employee Account</p>
+        </div>
+
+        <form method="post" action="insertData.php">
+            <!-- Only Employee Option -->
+            <input type="hidden" name="userType" value="employee">
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="email" id="email" autocomplete="off" required>
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="username" id="username" autocomplete="off" required>
+                <label for="username">Username</label>
+            </div>
+
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" id="password" autocomplete="off" required>
+                <label for="password">Password</label>
+            </div>
+
+            <div class="input-box" id="departmentBox">
+                Department:
+                <select class="input-field" name="department" id="department" autocomplete="off" required>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Human Resource">Human Resource</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Production">Production</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Research And Development">Research And Development</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <input type="submit" class="input-submit" name="send" value="Send">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
