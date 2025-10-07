@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         unset($_SESSION['reset_code'], $_SESSION['reset_email'], $_SESSION['user_type']);
 
         // Redirect to login page
-        header("Location: index.html?message=reset_success");
+        header("Location: indexLogin.php?message=reset_success");
         exit();
     } else {
         echo "❌ Failed to update password. Please try again.";

@@ -14,6 +14,6 @@ session_destroy();
 
 // Redirect to login page (or homepage)
 
-header("Location: index.html"); // Change to your login page
+header("Location: indexLogin.php"); // Change to your login page
 exit;
 ?>

@@ -341,7 +341,7 @@ footer img:hover {
 <nav class="navbar">
   <div class="navbar-container">
     <img src="images/logoheader.jpg" alt="Mimos logo" class="logo" />
-    <a href="index.html" class="login-btn">Login Now</a>
+    <a href="indexLogin.php" class="login-btn">Login Now</a>
   </div>
 </nav>
 
@@ -354,7 +354,7 @@ footer img:hover {
         <h2>Streamlined Your Daily Workflow</h2>
         <p>A smart way helps users manage tasks efficiently, stay organized 
 and meet deadlines through a centralized digital platform.</p>
-        <a href="index.html">Get Started</a>
+        <a href="indexLogin.php">Get Started</a>
       </div>
       <div class="hero-image">
         <img src="images/screencapture.jpg" alt="System Screenshot" />

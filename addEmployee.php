@@ -3,7 +3,7 @@ session_start();
 include('config.php');
 
 if (!isset($_SESSION['id'])) {
-    echo "<script>alert('Admin not logged in.'); window.location.href='index.html';</script>";
+    echo "<script>alert('Admin not logged in.'); window.location.href='indexLogin.php';</script>";
     exit;
 }
 

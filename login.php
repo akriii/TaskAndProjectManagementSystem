@@ -18,14 +18,14 @@ if (isset($_POST['send'])) {
         $idKey = "EmpID";
         $passKey = "EmpPassword";
     } else {
-        echo "<script>alert('Invalid user type.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Invalid user type.'); window.location.href='indexLogin.php';</script>";
         exit();
     }
 
     $result = mysqli_query($db, $sql);
 
     if (mysqli_num_rows($result) == 0) {
-        echo "<script>alert('You are not registered.'); window.location.href='index.html';</script>";
+        echo "<script>alert('You are not registered.'); window.location.href='indexLogin.php';</script>";
         exit();
     } else {
         $user = mysqli_fetch_assoc($result);
@@ -48,7 +48,7 @@ if (isset($_POST['send'])) {
             echo "<script>alert('Login successful'); window.location.href='" . $redirectPage . "?id=" . $userId . "';</script>";
             exit();
         } else {
-            echo "<script>alert('Incorrect password.'); window.location.href='index.html';</script>";
+            echo "<script>alert('Incorrect password.'); window.location.href='indexLogin.php';</script>";
             exit();
         }
     }

@@ -3,7 +3,7 @@ session_start();
 include("config.php");
 
 if (!isset($_SESSION['id'])) {
-    header("Location: index.html");
+    header("Location: indexLogin.php");
     exit();
 }
 // Check if a task ID is provided

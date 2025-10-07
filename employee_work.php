@@ -26,7 +26,10 @@ if (!$task) {
 }
 
 // Get employee ID
-$empID = isset($task['EmpID']) ? $task['EmpID'] : null;
+if (!isset($_GET['empID']) || empty($_GET['empID'])) {
+    die("Employee ID is missing.");
+}
+$empID = $_GET['empID'];
 
 
 if (!$empID) {

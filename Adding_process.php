@@ -4,7 +4,7 @@ include("config.php");
 
 // Check if admin is logged in
 if (!isset($_SESSION['id'])) {
-    echo "<script>alert('Admin not logged in.'); window.location.href='index.html';</script>";
+    echo "<script>alert('Admin not logged in.'); window.location.href='indexLogin.php';</script>";
     exit;
 }
 
